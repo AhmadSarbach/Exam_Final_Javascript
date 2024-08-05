@@ -5,55 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire d'Inscription</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\styleformulaire.css">
+    <link rel="stylesheet" href="../css/styleformulaire.css">
+    <script src="../script/formulaire.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <a href="#" class="logo">
-                <img src="images\logo3.png" alt="Moroccan Delights Logo">
+                <img src="../images/logo3.png" alt="Moroccan Delights Logo">
                 <span class="logo-text">Moroccan Delights</span>
             </a>
             <nav>
                 <ul class="navbar">
-                    <li><a href="html\index.html">Home</a></li>
-                    <li><a href="html\about.html">About</a></li>
-                    <li><a href="html\menu.html">Menu</a></li>
-                    <li><a href="html\testimonials.html">Testimonials</a></li>
-                    <li><a href="html\reservations.html">Reservations</a></li>
-                    <li><a href="html\contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <a href="C:\Users\USER\Documents\Projetwebclientgit\Projecthtmlcssjs\programme_humanitaire.html" class="humanitarian-program">Humanitarian Program</a>
+                <a href="programme_humanitaire.html" class="humanitarian-program">Humanitarian Program</a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="form-container">
+        <div id="registration-form" class="form-container">
             <form action="#" method="post">
                 <h1>Inscription</h1>
                 <div class="input-group">
-                    <label for="nom-complet">Name</label>
-                    <input type="text" id="nom-complet" name="nom-complet" required>
+                    <label for="nom_complet">Name</label>
+                    <input type="text" id="nom_complet" name="nom_complet" required>
+                    <span class="error-message" id="nom-complet-error"></span> <!-- Message d'erreur -->
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span> <!-- Message d'erreur -->
                 </div>
                 <div class="input-group">
                     <label for="statut">Marital Status</label>
                     <select id="statut" name="statut" required>
+                        <option value="">Select...</option>
                         <option value="celib">Single</option>
                         <option value="marié">Married</option>
                         <option value="divorcé">Divorced</option>
                         <option value="veuf(ve)">Widower/Widow</option>
                     </select>
+                    <span class="error-message" id="statut-error"></span> <!-- Message d'erreur -->
                 </div>
                 <div class="input-group">
                     <label for="adresse">Postal Code</label>
                     <input type="text" id="adresse" name="adresse" required>
+                    <span class="error-message" id="adresse-error"></span> <!-- Message d'erreur -->
                 </div>
                 <button type="submit">Submit</button>
             </form>
+
+            <!-- Div pour afficher les résultats -->
+            <div id="thanks_msg" style="display: none;">
+                <h2>Merci pour votre inscription !</h2>
+                <p><strong>Name:</strong> <span id="thanksName"></span></p>
+                <p><strong>Email:</strong> <span id="thanksEmail"></span></p>
+                <p><strong>Marital Status:</strong> <span id="thanksStatus"></span></p>
+                <p><strong>Postal Code:</strong> <span id="thanksAddress"></span></p>
+            </div>
+
+            <!-- Div pour afficher les données du serveur -->
+            <div id="serveur"></div>
         </div>
     </main>
     <footer>
@@ -63,18 +81,18 @@
                     <div class="footer-links">
                         <h3 class="green-text">Quick Links</h3>
                         <ul>
-                            <li><a href="html\index.html" class="green-text">Home</a></li>
-                            <li><a href="html\about.html" class="green-text">About</a></li>
-                            <li><a href="html\menu.html" class="green-text">Menu</a></li>
-                            <li><a href="html\contact.html" class="green-text">Contact</a></li>
+                            <li><a href="index.html" class="green-text">Home</a></li>
+                            <li><a href="about.html" class="green-text">About</a></li>
+                            <li><a href="menu.html" class="green-text">Menu</a></li>
+                            <li><a href="contact.html" class="green-text">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-social">
                         <h3 class="green-text">Follow Us</h3>
                         <ul>
-                            <li><a href="www.facebook.com" class="green-text">Facebook</a></li>
-                            <li><a href="www.instagram.com" class="green-text">Instagram</a></li>
-                            <li><a href="www.twitter.com" class="green-text">Twitter</a></li>
+                            <li><a href="https://www.facebook.com" class="green-text">Facebook</a></li>
+                            <li><a href="https://www.instagram.com" class="green-text">Instagram</a></li>
+                            <li><a href="https://www.twitter.com" class="green-text">Twitter</a></li>
                         </ul>
                     </div>
                 </div>
