@@ -1,0 +1,254 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #222;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    flex-direction: column;
+}
+
+.form-container {
+    background: #333;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    position: relative;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #e60000;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.input-group {
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #e60000;
+    transition: 0.3s;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+    transition: 0.3s;
+    z-index: 1; /* Assurez-vous que les champs sont au-dessus de l'effet lumineux */
+}
+
+input:focus, select:focus {
+    background: #555;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-radius: 5px;
+    background: #e60000;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #cc0000;
+}
+
+/* Animation de l'effet lumineux */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(230, 0, 0, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(230, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(230, 0, 0, 0);
+    }
+}
+
+.form-container::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    box-shadow: 0 0 0 0 rgba(230, 0, 0, 0.4);
+    animation: pulse 2s infinite;
+    z-index: -1; /* Positionner derrière le formulaire */
+}
+/*CSS POUR HEADER*/
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header .logo img {
+    height: 80px; 
+    margin-right: 10px; 
+}
+
+header .logo span {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    color: #ff0000; /* Dark Red color */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar li {
+    margin-left: 20px;
+}
+
+header .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+header .navbar a:hover {
+    background-color: #ff0000; 
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header .humanitarian-program {
+    margin-left: 20px;
+    background-color: #26b601; 
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .humanitarian-program:hover {
+    background-color: #3e8e41; 
+}
+/*CSS POUR FOOTER*/
+
+footer {
+    background: url('C:/Users/USER/Documents/Projetwebclientgit/Projecthtmlcssjs/images/footerbackground.webp') no-repeat center center/cover; /* Use your background image here */
+    padding: 40px 20px;
+    color: #cccccc;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    width: 100%;
+    background-color: #000000;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-social {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-links h3,
+.footer-social h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    color: #ff0000; 
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+    color: #ff0000; 
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ff0000;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
