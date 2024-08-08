@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews - Moroccan Delights</title>
     <link rel="stylesheet" href="../css/testimonials.css">
+    <script src="../script/navfixe.js"></script>
+    <script src="../script/commentaire.js" defer></script> <!-- Assurez-vous que le JavaScript se charge après le HTML -->
 </head>
 <body>
     <header>
@@ -56,41 +58,37 @@
             </div>
         </div>
 
-        <!-- Video Testimonials Section -->
-<!-- Video Testimonials Section -->
-<!-- Video Testimonials Section -->
-<section class="video-testimonials">
-    <h2 class="video-title">Watch Reviews From The World</h2>
-    <div class="video-slider">
-        <button type="button" class="prev-video-button">Previous</button>
-        <div class="video-item">
-            <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/zjDK3ICyWUA"
-                    title="Customer Testimonial 1 - Moroccan Delights" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-        <div class="video-item">
-            <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/drGsKpYKjoM"
-                    title="Customer Testimonial 2 - Moroccan Delights" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-        <div class="video-item">
-            <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/UVn5utM7Ixs"
-                    title="Customer Testimonial 3 - Moroccan Delights" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-        <button type="button" class="next-video-button">Next</button>
-    </div>
-</section>
+        <!-- Section des témoignages vidéo -->
+        <section class="video-testimonials">
+            <h2 class="video-title">Watch Reviews From The World</h2>
+            <div class="video-slider">
+                <button type="button" class="prev-video-button">Previous</button>
+                <div class="video-item">
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/zjDK3ICyWUA"
+                            title="Customer Testimonial 1 - Moroccan Delights" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-item">
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/drGsKpYKjoM"
+                            title="Customer Testimonial 2 - Moroccan Delights" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-item">
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/UVn5utM7Ixs"
+                            title="Customer Testimonial 3 - Moroccan Delights" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <button type="button" class="next-video-button">Next</button>
+            </div>
+        </section>
 
-
-
-
+        <!-- Section des commentaires -->
         <div class="comment-section">
             <h3 class="comment-title">Add a review</h3>
             <div>
@@ -102,6 +100,11 @@
                     <button type="button" id="postReviewBtn">Post</button>
                 </div>
             </section>
+            <!-- Message de remerciement -->
+            <div class="thank-you-message" id="thankYouMessage">
+                <h2>Thank you for your review!</h2>
+                <p>Your feedback is valuable to us.</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -132,7 +135,5 @@
             </div>
         </div>
     </footer>
-    <script src="../script/videoSlider.js"></script>
-    <script src="../script/commentaire.js"></script>
 </body>
 </html>
