@@ -155,6 +155,27 @@ header .humanitarian-program:hover {
     background-color: #d32f2f;
 }
 
+/* Ajout des styles pour les messages d'erreur */
+.error {
+    color: #ff0000; /* Rouge pour les messages d'erreur */
+    font-size: 0.875em; /* Taille de la police réduite */
+    margin-top: 5px;
+    display: block; /* Les messages sont toujours affichés */
+    background-color: #3c3c3c; /* Fond pour bien démarquer les messages d'erreur */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Ajout d'une animation pour les messages d'erreur */
+.error.show {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 footer {
     background: url('../images/footerbackground.webp') no-repeat center center/cover; /* Use your background image here */
     padding: 40px 20px;
