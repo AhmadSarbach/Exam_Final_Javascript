@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
 body {
     font-family: 'Oswald', sans-serif;
     background: #222;
@@ -48,7 +50,7 @@ input, select {
     background: #444;
     color: #fff;
     transition: 0.3s;
-    z-index: 1; /* Assurez-vous que les champs sont au-dessus de l'effet lumineux */
+    z-index: 1;
 }
 
 input:focus, select:focus {
@@ -96,8 +98,9 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 0 0 0 rgba(230, 0, 0, 0.4);
     animation: pulse 2s infinite;
-    z-index: -1; /* Positionner derrière le formulaire */
+    z-index: -1;
 }
+
 /*CSS POUR HEADER*/
 header {
     background-color: #000000;
@@ -130,7 +133,7 @@ header .logo img {
 header .logo span {
     font-family: 'Lobster', cursive;
     font-size: 1.5em;
-    color: #ff0000; /* Dark Red color */
+    color: #ff0000;
 }
 
 header nav {
@@ -180,10 +183,11 @@ header .humanitarian-program {
 header .humanitarian-program:hover {
     background-color: #3e8e41; 
 }
+
 /*CSS POUR FOOTER*/
 
 footer {
-    background: url('C:/Users/USER/Documents/Projetwebclientgit/Projecthtmlcssjs/images/footerbackground.webp') no-repeat center center/cover; /* Use your background image here */
+    background: url('../images/footerbackground.webp') no-repeat center center/cover;
     padding: 40px 20px;
     color: #cccccc;
     text-align: center;

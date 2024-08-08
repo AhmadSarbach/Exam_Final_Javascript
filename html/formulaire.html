@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styleformulaire.css">
     <script src="../script/formulaire.js" defer></script>
-    </head>
+</head>
 <body>
     <header>
         <div class="container">
@@ -28,6 +28,7 @@
             </nav>
         </div>
     </header>
+
     <main>
         <div id="registration-form" class="form-container">
             <form action="#" method="post">
@@ -35,12 +36,12 @@
                 <div class="input-group">
                     <label for="nom_complet">Name</label>
                     <input type="text" id="nom_complet" name="nom_complet" required>
-                    <span class="error-message" id="nom-complet-error"></span> <!-- Message d'erreur -->
+                    <span class="error-message" id="nom-complet-error"></span>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
-                    <span class="error-message" id="email-error"></span> <!-- Message d'erreur -->
+                    <span class="error-message" id="email-error"></span>
                 </div>
                 <div class="input-group">
                     <label for="statut">Marital Status</label>
@@ -51,17 +52,16 @@
                         <option value="divorcé">Divorced</option>
                         <option value="veuf(ve)">Widower/Widow</option>
                     </select>
-                    <span class="error-message" id="statut-error"></span> <!-- Message d'erreur -->
+                    <span class="error-message" id="statut-error"></span>
                 </div>
                 <div class="input-group">
                     <label for="adresse">Postal Code</label>
                     <input type="text" id="adresse" name="adresse" required>
-                    <span class="error-message" id="adresse-error"></span> <!-- Message d'erreur -->
+                    <span class="error-message" id="adresse-error"></span>
                 </div>
                 <button type="submit">Submit</button>
             </form>
 
-            <!-- Div pour afficher les résultats -->
             <div id="thanks_msg" style="display: none;">
                 <h2>Merci pour votre inscription !</h2>
                 <p><strong>Name:</strong> <span id="thanksName"></span></p>
@@ -70,7 +70,6 @@
                 <p><strong>Postal Code:</strong> <span id="thanksAddress"></span></p>
             </div>
 
-            <!-- Div pour afficher les données du serveur -->
             <div id="serveur"></div>
         </div>
     </main>

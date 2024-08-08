@@ -54,8 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let errorElement = inputElement.nextElementSibling;
         if (!errorElement || !errorElement.classList.contains('error')) {
             errorElement = document.createElement('div');
-            errorElement.classList.add('error');
-            errorElement.style.color = 'red';
+            errorElement.classList.add('error', 'show');
             inputElement.parentNode.insertBefore(errorElement, inputElement.nextSibling);
         }
         errorElement.textContent = message;
