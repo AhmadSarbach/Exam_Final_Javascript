@@ -176,6 +176,18 @@ h1.title {
     background-color: #cc0000;
 }
 
+/* Message de remerciement */
+.thank-you-message {
+    background-color: #26b601;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: none; /* Le message est caché par défaut */
+    font-family: 'Montserrat', sans-serif;
+}
+
 footer {
     background: url('../images/footerbackground.webp') no-repeat center center/cover;
     padding: 40px 20px;
