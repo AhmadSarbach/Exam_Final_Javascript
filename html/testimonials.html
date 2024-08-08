@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews - Moroccan Delights</title>
     <link rel="stylesheet" href="../css/testimonials.css">
+    <script src="../script/commentaire.js" defer></script>
 </head>
 <body>
     <header>
@@ -63,7 +64,7 @@
             <section class="comment-form">
                 <input type="text"  name="comment" id="comment" placeholder="Add a review">
                 <div>
-                    <button type="submit">Post</button>
+                    <button type="submit" id="submit" onclick="Post()">Post</button>
                 </div>
             </section>
         </div>
