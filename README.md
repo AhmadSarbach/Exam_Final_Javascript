@@ -14,9 +14,9 @@ Bienvenue sur le projet Moroccan Delights. Ce projet est une application web pou
 ![Page d'accueil](images/screenshot1.png)
 
 ### Page de contact
-![3](../Exam_Final_Javascript/images/scr4.png)
+![3](images/scr4.png)
 
 ### Témoignages
-![2s](../Exam_Final_Javascript/images/scr3.png)
+![2s](images/scr3.png)
 
-![T1](../Exam_Final_Javascript/images/scr3.png)
+![T1](images/scr3.png)
