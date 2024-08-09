@@ -11,7 +11,7 @@ Bienvenue sur le projet Moroccan Delights. Ce projet est une application web pou
 ## Captures d'écran
 
 ### Page d'accueil
-![Page d'accueil](../Exam_Final_Javascript/images/screenshot1.png)
+![Page d'accueil](images/screenshot1.png)
 
 ### Page de contact
 ![3](../Exam_Final_Javascript/images/scr4.png)
